@@ -11,5 +11,6 @@ Pod::Spec.new do |spec|
   spec.public_header_files 	= "include/**/*.h"
   spec.header_mappings_dir	= 'include/thrift'
   spec.vendored_libraries 	= 'lib/libthrift.a'
+  spec.preserve_paths		= 'lib/*.a'
   
 end
