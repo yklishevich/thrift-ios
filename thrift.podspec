@@ -7,8 +7,8 @@ Pod::Spec.new do |spec|
   spec.summary          	= 'thrift static library for iOS'
   spec.platform     		= :ios, "8.0"
   spec.source           	= { :git => 'https://github.com/yklishevich/thrift-ios.git' }
-  spec.source_files        	= 'include/**/*.tcc'
-  spec.public_header_files 	= 'include/**/*.tcc'
+  spec.source_files        	= 'include/**/*.h'
+  spec.public_header_files 	= 'include/**/*.h'
   #spec.header_mappings_dir	= 'include'
   spec.vendored_libraries 	= 'lib/libthrift.a'
   spec.preserve_paths		= 'lib/*.a'
