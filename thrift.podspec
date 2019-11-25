@@ -8,7 +8,6 @@ Pod::Spec.new do |spec|
   spec.platform     		= :ios, "8.0"
   spec.source           	= { :git => 'https://github.com/yklishevich/thrift-ios.git' }
   spec.source_files        	= 'include/**/*.h', 'include/**/*.tcc'
-  spec.public_header_files 	= 'include/**/*.h', 'include/**/*.tcc'
   spec.header_mappings_dir	= 'include'
   spec.vendored_libraries 	= 'lib/libthrift.a'
   spec.preserve_paths		= 'lib/*.a', 'include/**/*.tcc'
