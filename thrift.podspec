@@ -7,10 +7,11 @@ Pod::Spec.new do |spec|
   spec.summary          	= 'thrift static library for iOS'
   spec.platform     		= :ios, "8.0"
   spec.source           	= { :git => 'https://github.com/yklishevich/thrift-ios.git' }
-  spec.source_files        	= 'include/**/*.h' #, 'include/**/*.tcc'
+  # ! do not include *.tcc files into 'source_files' otherwise error will occur: "The 'Pods-RubetekIOS-CPP' target has libraries with conflicting names: libthrift.a." 
+  spec.source_files        	= 'include/**/*.h'
   spec.header_mappings_dir	= 'include'
   spec.vendored_libraries 	= 'lib/libthrift.a'
-  spec.preserve_paths		= 'lib/libthrift.a'
+  spec.preserve_paths		= 'include/**/*.tcc'
   spec.user_target_xcconfig  = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/thrift/include" }
   
 end
