@@ -9,8 +9,8 @@ Pod::Spec.new do |spec|
   spec.source           	= { :git => 'https://github.com/yklishevich/thrift-ios.git' }
   spec.source_files        	= 'include/**/*.h'
   spec.public_header_files 	= 'include/**/*.h'
-  #spec.header_mappings_dir	= 'include'
+  spec.header_mappings_dir	= 'include'
   spec.vendored_libraries 	= 'lib/libthrift.a'
-  spec.preserve_paths		= 'lib/*.a'
+  spec.preserve_paths		= 'lib/*.a', 'include/**/*.tcc'
   
 end
