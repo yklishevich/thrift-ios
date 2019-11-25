@@ -8,9 +8,8 @@ Pod::Spec.new do |spec|
   spec.platform     		= :ios, "8.0"
   spec.source           	= { :git => 'https://github.com/yklishevich/thrift-ios.git' }
   spec.source_files        	= 'include/**/*.h', 'include/**/*.tcc'
-  spec.public_header_files  = ''
   spec.header_mappings_dir	= 'include'
   spec.vendored_libraries 	= 'lib/libthrift.a'
-  s.xcconfig 				= { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/thrift/include" }
+  spec.xcconfig 				= { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/thrift/include" }
   
 end
