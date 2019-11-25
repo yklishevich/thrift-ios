@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.source_files        	= 'include/**/*.h', 'include/**/*.tcc'
   spec.header_mappings_dir	= 'include'
   spec.vendored_libraries 	= 'lib/libthrift.a'
+  spec.preserve_paths		= 'lib/libthrift.a'
   spec.user_target_xcconfig  = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/thrift/include" }
   
 end
