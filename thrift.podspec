@@ -12,6 +12,7 @@ Pod::Spec.new do |spec|
   spec.header_mappings_dir	= 'include'
   spec.vendored_libraries 	= 'lib/libthrift.a'
   spec.preserve_paths		= 'include/**/*.tcc'
+  # HEADER_SEARCH_PATHS is modified so that tcc files could be found
   spec.user_target_xcconfig  = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/thrift/include' }
   
 end
