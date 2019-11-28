@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.authors          	= { 'Eugene Klishevich' => 'eklishevich@gmail.com' }
   spec.summary          	= 'thrift static library for iOS'
   spec.platform     		= :ios, "8.0"
-  spec.source           	= { :git => 'https://github.com/yklishevich/thrift-ios.git' }
+  spec.source           	= { :git => 'https://github.com/yklishevich/thrift-ios.git', :tag => spec.version }
   # ! do not include *.tcc files into 'source_files' otherwise error will occur: "The 'Pods-RubetekIOS-CPP' target has libraries with conflicting names: libthrift.a." 
   spec.source_files        	= 'include/**/*.h'
   spec.header_mappings_dir	= 'include'
